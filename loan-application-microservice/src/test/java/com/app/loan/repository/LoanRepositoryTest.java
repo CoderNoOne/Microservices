@@ -1,7 +1,6 @@
-package com.com.loan.repository;
+package com.app.loan.repository;
 
 import com.app.loan.model.Loan;
-import com.app.loan.repository.LoanRepository;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;

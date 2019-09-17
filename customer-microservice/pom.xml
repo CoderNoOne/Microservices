@@ -8,7 +8,7 @@
         <version>2.1.6.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>de.smava.homework</groupId>
+    <groupId>com.app</groupId>
     <artifactId>customer-microservice</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>customer-microservice</name>
@@ -109,13 +109,6 @@
             <version>5.3.2</version>
             <scope>test</scope>
         </dependency>
-
-<!--        <dependency>-->
-<!--            <groupId>org.hamcrest</groupId>-->
-<!--            <artifactId>hamcrest-all</artifactId>-->
-<!--            <version>RELEASE</version>-->
-<!--            <scope>test</scope>-->
-<!--        </dependency>-->
 
         <dependency>
             <groupId>org.skyscreamer</groupId>

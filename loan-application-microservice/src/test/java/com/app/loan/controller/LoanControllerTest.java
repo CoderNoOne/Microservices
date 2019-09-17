@@ -1,13 +1,11 @@
-package com.com.loan.controller;
+package com.app.loan.controller;
 
-import com.app.loan.controller.LoanController;
 import com.app.loan.exception.CustomerNotFoundException;
 import com.app.loan.dto.LoanDto;
 import com.app.loan.model.Customer;
 import com.app.loan.model.LoanStatus;
 import com.app.loan.service.LoanService;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
@@ -20,8 +18,6 @@ import org.springframework.test.context.junit.jupiter.SpringExtension;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 import org.springframework.web.client.RestTemplate;
-import org.springframework.web.reactive.function.client.WebClient;
-import reactor.core.publisher.Mono;
 
 import java.util.Arrays;
 import java.util.List;

@@ -1,11 +1,10 @@
-package com.com.loan.service;
+package com.app.loan.service;
 
 import com.app.loan.dto.LoanDto;
 import com.app.loan.mapper.LoanMapper;
 import com.app.loan.model.Loan;
 import com.app.loan.model.LoanStatus;
 import com.app.loan.repository.LoanRepository;
-import com.app.loan.service.LoanService;
 import org.junit.jupiter.api.*;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mapstruct.factory.Mappers;

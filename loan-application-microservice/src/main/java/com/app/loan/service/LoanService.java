@@ -18,7 +18,7 @@ import java.util.stream.Collectors;
 public class LoanService {
 
   private final LoanRepository loanRepository;
-  private final LoanMapper loanMapper /*= Mappers.getMapper(LoanMapper.class)*/;
+  private final LoanMapper loanMapper;
 
   public List<LoanDto> getLoansByCustomerId(String id) {
 
