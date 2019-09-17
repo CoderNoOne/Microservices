@@ -1,0 +1,26 @@
+server:
+  port: 9080
+application:
+  name: ^project.artifactId^
+  description: ^project.name^
+  version: ^project.version^
+eureka:
+  client:
+    registerWithEureka: false
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+spring:
+  application:
+    name: ^project.artifactId^
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+      routes:
+        - id: micro-service
+          uri: lb://micro-service
+          predicates:
+            - Path=/service/**
+          filters:
+            - RewritePath=/service/(?<path>.*), /$\{path}

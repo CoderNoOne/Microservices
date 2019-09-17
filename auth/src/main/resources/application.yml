@@ -1,0 +1,3 @@
+server.port: 9180
+logging:
+  level.root: DEBUG

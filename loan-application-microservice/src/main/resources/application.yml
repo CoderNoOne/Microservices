@@ -1,0 +1,33 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:testdb;DB_CLOSE_ON_EXIT=FALSE
+    driver-class-name: org.h2.Driver
+    username: admin
+    password: admin123
+  application:
+    name: loan-application-microservice
+  jpa:
+    generate-ddl: true
+    show-sql: true
+    open-in-view: false
+  resources:
+    add-mappings: true
+  h2:
+    console:
+      enabled: true
+
+server:
+  port: 4444
+
+eureka:
+  client:
+    registerWithEureka: true
+    fetch-registry: true
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: metrics,prometheus
